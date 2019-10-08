@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+    </header>
+
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+
+        <div class="user-info__data">
+          <h1 class="user-info__name">Винсент Ван Гог</h1>
+          <p class="user-info__job">Художник, постимпрессионист</p>          
+        </div>
+        <button class="user-info__editButton">Edit</button>
+        <button class="button button__right" id="newCardButton">-</button>
+      </div>
+    </div>
+
+    <div class="places-list root__section">
+      <!-- <div class="place-card">
+        <div class="place-card__image">
+          <button class="place-card__delete-icon"></button>
+        </div>
+        <div class="place-card__description">
+          <h3 class="place-card__name">Камчатка</h3>
+          <button class="place-card__like-icon"></button>
+        </div>
+      </div> -->
+    </div>
+    
+    <div class="popup" id="cardmaker">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="newCard">
+            <input type="text" name="placeName" class="popup__input popup__input_placeName" placeholder="Название" required minlength="2" maxlength="30">
+              <span id="error-placeName" class="error-message"></span>
+            <!-- <input type="text" name="placeLink" class="popup__input popup__input_placeLink" placeholder="Ссылка на картинку" required minlength="2" pattern = "/((([A-Za-z]{3,9}:(?:\/\/)?)(?:[\-;:&=\+\$,\w]+@)?[A-Za-z0-9\.\-]+|(?:www\.|[\-;:&=\+\$,\w]+@)[A-Za-z0-9\.\-]+)((?:\/[\+~%\/\.\w\-_]*)?\??(?:[\-\+=&;%@\.\w_]*)#?(?:[\.\!\/\\\w]*))?)/"> -->
+            <input type="text" name="placeLink" class="popup__input popup__input_placeLink" placeholder="Ссылка на картинку" required minlength="2" type="url">
+              <span id="error-placeLink" class="error-message"></span>
+            <button class="button popup__button" id="saveCardButton">+</button>
+        </form>
+      </div>      
+    </div>
+
+    <div class="popup" id="userInfoEdit">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+        <h3 class="popup__title">Редактировать профиль</h3>
+        <form class="popup__form" name="userInfoEdit">
+            <input type="text" name="userName" class="popup__input popup__input_userName" placeholder="Имя" required minlength="2" maxlength="30">
+              <span id="error-userName" class="error-message"></span>
+            <input type="text" name="userJob" class="popup__input popup__input_userJob" placeholder="О себе" required minlength="2" maxlength="30">
+              <span id="error-userJob" class="error-message"></span>
+            <button class="button popup__button" id="saveUserInfoButton">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="increaseImage">
+      <div class="popup__content">
+        <img src="./images/close.svg" alt="" class="popup__close">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+.user-info__editButton {
+  color: white;
+  border: 1px solid white;  
+  background-color: transparent;
+  cursor: pointer;
+  margin: 20px 0 0 0;
+
+  position: absolute;
+  left: 186px;
+  top: 170px;
+}
+
+@media screen and (max-width: 980px) {
+  .user-info__editButton {
+    position: static;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}

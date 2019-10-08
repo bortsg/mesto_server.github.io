@@ -1,0 +1,20 @@
+.popup.place-card__image-popup {
+    display: flex;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* max-width: 80vw;
+    max-height: 80vh; */
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* position: relative; */
+    /* box-sizing: border-box; */
+    /* padding: 34px 36px; */
+  }
+  
+@media screen and (max-width: 540px) {
+  .popup.place-card__image-popup {
+    width: calc(100% - 60px);
+  }
+}
+  

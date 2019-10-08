@@ -1,0 +1,18 @@
+/* .popup__invalid .error-message {
+    padding: 10px;
+    opacity: 1;
+    border-color: #FF3333;
+  }
+  
+  .popup__invalid .popup__input {
+    padding: 10px;
+    opacity: 1;
+
+    border-color: #FF3333;
+  } */
+
+  .popup__invalid  {    
+    padding: 10px;
+    opacity: 1;
+    border-color: #FF3333;
+  }
